@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-us-hero {
+    position: relative; /* Ensure the hero section is positioned relative */
+    height: 100vh; /* Adjust height as needed */
+}
+
+.hero-background {
+    position: relative; /* Position relative to contain the overlay and description */
+    height: 100%; /* Full height of the hero */
+    overflow: hidden; /* Hide overflow if needed */
+}
+
+.hero-background img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the entire area */
+}
+
+.overlay {
+    position: absolute; /* Position the overlay absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.hero-description {
+    position: absolute;
+    top: 50%; 
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+    z-index: 1; 
+}
+
+.hero-description h1 {
+    font-size: 78px;
+    margin-bottom: 10px; 
+}
+
+.hero-description p {
+    font-size: 21px;
+}
+
+.about-us {
+    width: 100%;
+    height: 92.3vh;
+}
+
+.about-us-description {
+    padding: 70px 0 70px 70px;
+}
+
+.about-us-description h1 {
+    font-size: 68px;
+    font-weight: 800;
+}
+
+.about-us-description p {
+    font-size: 16px;
+    width: 75%;
+}
+
+.about-us-image img {
+    border-radius: 15px;
+}
+
+.offerings {
+    width: 100%;
+    height: 92.3vh;
+    background-color: #198754;
+}
+
+.offerings h1 {
+    font-size: 58px;
+}
+
+.offers {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.offer-card {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    transition: transform 0.3s;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card i {
+    color: #198754;
+    margin-bottom: 15px;
+}
+
+
